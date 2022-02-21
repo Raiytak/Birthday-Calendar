@@ -1,0 +1,149 @@
+{
+    "minimum": {
+        "name": "Name",
+        "lastname": "Lastname",
+        "birthday": {
+            "day": 30,
+            "month": "mars"
+        }
+    },
+    "julie": {
+        "name": "Julie",
+        "lastname": "Poiriet",
+        "mobile": null,
+        "birthday": {
+            "day": 30,
+            "month": "mars"
+        },
+        "adress": {
+            "number": 0,
+            "street": "street Paris",
+            "postal code": "75001",
+            "city": "Paris",
+            "country": "FRANCE"
+        }
+    },
+    "amelie": {
+        "name": "Amélie",
+        "lastname": "Rusarde",
+        "mobile": "+33 ",
+        "birthday": {
+            "day": 23,
+            "month": "juillet",
+            "annee": 1997
+        },
+        "adress": null
+    },
+    "florian": {
+        "name": "Florian",
+        "lastname": "Judicieux",
+        "mobile": null,
+        "birthday": {
+            "day": 6,
+            "month": "décembre"
+        },
+        "adress": {
+            "number": 0,
+            "street": "street Paris",
+            "postal code": "75001",
+            "city": "Paris",
+            "country": "FRANCE"
+        }
+    },
+    "julien": {
+        "name": "Julien",
+        "lastname": "Papouillou",
+        "mobile": null,
+        "birthday": {
+            "day": 18,
+            "month": "juillet"
+        },
+        "adress": null
+    },
+    "faustine": {
+        "name": "Faustine",
+        "lastname": null,
+        "mobile": null,
+        "birthday": {
+            "day": 22,
+            "month": "avril"
+        },
+        "adress": null
+    },
+    "marguerite": {
+        "name": "Marguerite",
+        "lastname": "Coutuière",
+        "mobile": null,
+        "birthday": {
+            "day": 10,
+            "month": "novembre"
+        },
+        "adress": null
+    },
+    "aurelien": {
+        "name": "Aurélien",
+        "lastname": "Sage",
+        "mobile": null,
+        "birthday": {
+            "day": 11,
+            "month": "janvier"
+        },
+        "adress": null
+    },
+    "aimie": {
+        "name": "Aimie",
+        "lastname": "Deschamps",
+        "mobile": null,
+        "birthday": {
+            "day": 18,
+            "month": "octobre"
+        },
+        "adress": null
+    },
+    "antonin": {
+        "name": "Antonin",
+        "lastname": "Aramé",
+        "mobile": null,
+        "birthday": {
+            "day": 30,
+            "month": "novembre"
+        },
+        "adress": null
+    },
+    "nolwenn": {
+        "name": "Nolwenn",
+        "lastname": "Sage",
+        "mobile": null,
+        "birthday": {
+            "day": 24,
+            "month": "mai"
+        },
+        "adress": null
+    },
+    "jacques": {
+        "name": "Jacques",
+        "lastname": "Schmidt",
+        "mobile": null,
+        "birthday": {
+            "day": 27,
+            "month": "décembre"
+        },
+        "adress": {
+            "city": "Paris",
+            "country": "FRANCE"
+        }
+    },
+    "paupau": {
+        "name": "Pauline",
+        "lastname": "Savabien",
+        "mobile": null,
+        "birthday": {
+            "day": 21,
+            "month": "février"
+        },
+        "adress": {
+            "city": "Paris",
+            "country": "FRANCE"
+        }
+    }
+}
