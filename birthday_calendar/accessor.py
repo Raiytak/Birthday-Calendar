@@ -32,7 +32,7 @@ class BirthdayAccessor:
         if not Path.exists(self.folder / NORMALIZED_JSON):
             self.clearCache()
 
-    def getDataOfJson(self, path):
+    def getDataOfJson(self, path: Path):
         with open(path, "r", encoding="utf-8") as jsonfile:
             data = json.load(jsonfile)
             return data
@@ -75,7 +75,7 @@ class BirthdayAccessor:
         updated_birthday_from_user = self.saveBirthdayInUser(birthday)
         return updated_birthday
 
-    def removeBirthdayWithIdentifierIn(self, identifier: str, path):
+    def removeBirthdayWithIdentifierIn(self, identifier: str, path: Path):
         data = self.getDataOfJson(path)
         with open(path, "w", encoding="utf-8") as file:
             del data[identifier]
@@ -92,5 +92,5 @@ class BirthdayAccessor:
         self.removeBirthdayWithIdentifierFromCache(identifier)
         self.removeBirthdayWithIdentifierFromUser(identifier)
 
-    def setUserFilePath(self, path):
+    def setUserFilePath(self, path: Path):
         self.user_file = path

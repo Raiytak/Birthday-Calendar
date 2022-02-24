@@ -9,7 +9,7 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="birthday_calendar",
+    name="birthday-calendar",
     version="1.0",
     python_requires=">=3.8",
     description="Calendar of birthdays using tkcalendar",

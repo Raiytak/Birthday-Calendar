@@ -1,6 +1,6 @@
 import datetime
 
-from convert import Birthday
+from .convert import Birthday
 
 """Core functionalities of the application"""
 

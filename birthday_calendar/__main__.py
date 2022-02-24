@@ -1,9 +1,9 @@
 import argparse
 
-from accessor import BirthdayAccessor
-from convert import convertDictToBirthdays
-from app_shell import AppShell
-from app_func import AppFunctionalities
+from .accessor import BirthdayAccessor
+from .convert import convertDictToBirthdays
+from .app_shell import AppShell
+from .app_func import AppFunctionalities
 
 """
 Main script
