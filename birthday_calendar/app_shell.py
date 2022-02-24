@@ -12,7 +12,7 @@ class AppShell:
     FIELDS = ["Day", "Month", "Name", "Lastname", "Identifier"]
 
     def __init__(self):
-        self.root = tk.Tk()
+        self.root = tk.Tk(screenName="Birthday Calendar")
         self.elements = {}
 
         self.window = tk.Frame(self.root)
