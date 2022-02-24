@@ -1,0 +1,27 @@
+{
+    "minimum": {
+        "name": "Name",
+        "lastname": "Lastname",
+        "birthday": {
+            "day": 12,
+            "month": 12
+        }
+    },
+    "julie": {
+        "name": "Julie",
+        "lastname": "Poiriet",
+        "birthday": {
+            "day": 30,
+            "month": "march"
+        }
+    },
+    "helloworld": {
+        "name": "Hello",
+        "lastname": "World",
+        "birthday": {
+            "day": 5,
+            "month": "juillet",
+            "year": 1997
+        }
+    }
+}
