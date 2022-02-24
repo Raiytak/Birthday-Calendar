@@ -5,6 +5,12 @@ from convert import convertDictToBirthdays
 from app_shell import AppShell
 from app_func import AppFunctionalities
 
+"""
+Main script
+
+Handles the arguments and craetes a mixin with the shell, core functions and accessor
+"""
+
 
 class MainApp(AppFunctionalities, AppShell):
     def __init__(self, birthday_accessor, birthday_convertor, *args, **kwargs):
@@ -15,16 +21,35 @@ class MainApp(AppFunctionalities, AppShell):
     def birthdays_data(self):
         return birthday_accessor.getData()
 
+    def birthdays_data_from_user(self):
+        if birthday_accessor.user_file:
+            return birthday_accessor.getDataOfJson(birthday_accessor.user_file)
+        return {}
+
     @property
     def birthdays(self):
         data = self.birthdays_data()
         return self.birthday_convertor(data)
 
+    @property
+    def birthdays_from_user(self):
+        data = self.birthdays_data_from_user()
+        return self.birthday_convertor(data)
+
     def saveBirthday(self, birthday):
         return self.birthday_accessor.saveBirthday(birthday)
 
+    def saveBirthdayInCache(self, birthday):
+        return self.birthday_accessor.saveBirthdayInCache(birthday)
+
     def deleteIdentifer(self, identifier):
         return self.birthday_accessor.removeBirthdayWithIdentifier(identifier)
+
+    def setUserFilePath(self, path):
+        self.birthday_accessor.setUserFilePath(path)
+
+    def clearCache(self):
+        self.birthday_accessor.clearCache()
 
 
 parser = argparse.ArgumentParser()
@@ -40,19 +65,8 @@ parser.add_argument(
     help="Number of years around today's year on which the birthdays are added to the calendar (minimum 1)",
     type=int,
 )
-parser.add_argument(
-    "--user-file-path",
-    nargs=argparse.OPTIONAL,
-    const=True,
-    help="Option to pop up a window that asks the user for its file path",
-)
+
 args = parser.parse_args()
-
-if args.user_file_path is None:
-    path = args.path
-else:
-    path = None
-birthday_accessor = BirthdayAccessor(path)
-
+birthday_accessor = BirthdayAccessor(args.path)
 main_app = MainApp(birthday_accessor, convertDictToBirthdays, args.years)
 main_app.launchCalendar()

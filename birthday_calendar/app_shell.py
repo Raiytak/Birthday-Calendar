@@ -1,11 +1,10 @@
 from tkcalendar import Calendar
 
-try:
-    import tkinter as tk
-except ImportError:
-    import Tkinter as tk
+import tkinter as tk
+import tkinter.filedialog
 
-"""Create the elements of the application UI"""
+
+"""Create the UI elements of the application"""
 
 
 class AppShell:
@@ -95,6 +94,9 @@ class AppShell:
             "add_user_file_button": add_user_file_button,
             "quit": quit,
         }
+
+    def askUserFilePath(self):
+        return tkinter.filedialog.askopenfilename()
 
     def placeComponents(self):
         self.window.pack(side=tk.TOP, fill=tk.X, padx=5, pady=5)

@@ -2,7 +2,12 @@ import os
 from pathlib import Path
 import json
 
-"""Access the data contained in 'example.json' and translate it"""
+"""
+Access the data contained in the json.
+
+Creates a cache in the user home folder named '.birthday_calendar'
+containing the cache 'normalized.json' (translates the months in integer if necessary)
+"""
 
 HOME = Path.home()
 APP_FOLDER = ".birthday_calendar"
@@ -25,13 +30,16 @@ class BirthdayAccessor:
             except json.decoder.JSONDecodeError:
                 os.remove(self.folder / NORMALIZED_JSON)
         if not Path.exists(self.folder / NORMALIZED_JSON):
-            with open(self.folder / NORMALIZED_JSON, "w", encoding="utf-8") as jsonfile:
-                json.dump({}, jsonfile, indent=4)
+            self.clearCache()
 
     def getDataOfJson(self, path):
         with open(path, "r", encoding="utf-8") as jsonfile:
             data = json.load(jsonfile)
             return data
+
+    def clearCache(self):
+        with open(self.cache, "w", encoding="utf-8") as jsonfile:
+            json.dump({}, jsonfile, indent=4)
 
     def getData(self):
         return self.getDataOfJson(self.cache)
@@ -83,3 +91,6 @@ class BirthdayAccessor:
     def removeBirthdayWithIdentifier(self, identifier: str):
         self.removeBirthdayWithIdentifierFromCache(identifier)
         self.removeBirthdayWithIdentifierFromUser(identifier)
+
+    def setUserFilePath(self, path):
+        self.user_file = path

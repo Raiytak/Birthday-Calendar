@@ -3,7 +3,12 @@ from functools import lru_cache
 from googletrans import Translator, constants
 
 
-"""Translate the given information into Birthdays"""
+"""
+Translate the given information into Birthdays.
+
+The month may be given as an integer or a name
+In the late case, months are translated using the google API.
+"""
 
 
 class TranslationError(Exception):

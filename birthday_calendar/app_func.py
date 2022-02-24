@@ -31,7 +31,7 @@ class AppFunctionalities:
                 "remove_entry"
             ]: self.removeIdentifier(remove_entry)
         )
-        self.elements["add_user_file_button"].configure(command=self.addUserFile)
+        self.elements["add_user_file_button"].configure(command=self.useUserFile)
         self.elements["calendar"].bind("<<CalendarSelected>>", self.showSelectionToUser)
 
     # Segment of years centered around today's year and within DELTA
@@ -39,14 +39,19 @@ class AppFunctionalities:
         if delta is None:
             delta = self.years
         elif delta < 1:
-            return [0]
+            delta = 1
         return [
             datetime.datetime.today().year + year_delta
-            for year_delta in range(-delta, delta, 1)
+            for year_delta in range(-delta, delta + 1, 1)
         ]
 
     def addBirthdaysToCalendar(self, calendar, birthdays):
         for birthday in birthdays.values():
+            self.createCalendarEvent(calendar, birthday)
+
+    def addBirthdaysToCalendarAndSaveInCache(self, calendar, birthdays):
+        for birthday in birthdays.values():
+            self.saveBirthdayInCache(birthday)
             self.createCalendarEvent(calendar, birthday)
 
     def createCalendarEvent(self, calendar, birthday):
@@ -66,8 +71,16 @@ class AppFunctionalities:
         for event_id in self.events[identifier]:
             calendar.calevent_remove(event_id)
 
-    def addUserFile(self):
-        pass
+    def deleteAllBirthdays(self):
+        self.elements["calendar"].calevent_remove("all")
+        self.clearCache()
+
+    def useUserFile(self):
+        path = self.askUserFilePath()
+        self.setUserFilePath(path)
+        self.deleteAllBirthdays()
+        birthdays = self.birthdays_from_user
+        self.addBirthdaysToCalendarAndSaveInCache(self.elements["calendar"], birthdays)
 
     def addBirthday(self, entries):
         ENTRIES_CHECK_AND_ADD = ["Name", "Lastname"]
