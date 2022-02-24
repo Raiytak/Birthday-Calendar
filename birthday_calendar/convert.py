@@ -147,9 +147,9 @@ def convertDictToBirthday(identifier, birthday_dict):
     return Birthday(
         birthday_dict["birthday"]["day"],
         birthday_dict["birthday"]["month"],
-        identifier,
         birthday_dict["name"],
-        birthday_dict["lastname"] or None,
+        birthday_dict["lastname"],
+        identifier,
     )
 
 
