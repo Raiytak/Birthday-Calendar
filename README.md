@@ -44,6 +44,9 @@ To save your birthdays, you need a json file containing their info. An example i
     }
 }
 ```
+You can download this file (present in assets) as an example:
+<a href="https://github.com/Raiytak/Birthday-Calendar/tree/master/assets/birthdays.json" download="birthdays.json">birthdays.json</a>
+
 
 ## Information
 Using tkinter, it generates a calendar view on which you can add and delete birthdays.
