@@ -58,7 +58,7 @@ class AppShell:
     def createMessageBox(self, root):
         message_box = tk.Frame(root)
         message_box_text = tk.StringVar(
-            value="The birthdays are marked as red\nHover over it to see the information :)"
+            value="The birthdays are marked as red\nHover over or click it to see the information :)"
         )
         message_label = tk.Label(
             message_box, textvariable=message_box_text, relief=tk.RAISED
