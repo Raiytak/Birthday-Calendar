@@ -24,4 +24,5 @@ setup(
     author_email="mathieu.salaun12@gmail.com",
     install_requires=list_requirements,
     packages=["birthday_calendar"],
+    license="MIT",
 )
