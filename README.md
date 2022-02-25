@@ -49,9 +49,9 @@ You can download the example file here:
 Then clic on the "Use File" button and select your file containing your info!
 
 ## Add / Remove a birthday
-To add one birthday, add the information needed on the entries on the right and clic on "Add birthday", the identifier is optional (it is only required to differenciate two people with the same name and lastname).
+To ___add a birthday___, add the information needed on the entries on the right and clic on "Add birthday", the identifier is optional (it is only required to differenciate two people with the same name and lastname).
 
-To remove a birthday, you need to put its identifier (the name inside the parenthesis in the label of the birthday) next to the button "Remove", and then clic on it!
+To ___remove a birthday___, you need to put its identifier (the name inside the parenthesis in the label of the birthday) next to the button "Remove", and then clic on it!
 
 ## Information
 Using tkinter, it generates a calendar view on which you can add and delete birthdays.
