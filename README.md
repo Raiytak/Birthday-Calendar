@@ -46,6 +46,12 @@ To save your birthdays, you need a json file containing their info. An example i
 ```
 You can download the example file here:
 [birthdays.json](https://github.com/Raiytak/Birthday-Calendar/tree/master/assets/birthdays.json)
+Then clic on the "Use File" button and select your file containing your info!
+
+## Add / Remove a birthday
+To add one birthday, add the information needed on the entries on the right and clic on "Add birthday", the identifier is optional (it is only required to differenciate two people with the same name and lastname).
+
+To remove a birthday, you need to put its identifier (the name inside the parenthesis in the label of the birthday) next to the button "Remove", and then clic on it!
 
 ## Information
 Using tkinter, it generates a calendar view on which you can add and delete birthdays.
