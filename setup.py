@@ -22,7 +22,6 @@ setup(
     url="https://github.com/Raiytak/Birthday-Calendar",
     author="Mathieu Salaun",
     author_email="mathieu.salaun12@gmail.com",
-    keywords=["birthday", "calendar", "birthday calendar"],
     install_requires=list_requirements,
     packages=["birthday_calendar"],
 )
