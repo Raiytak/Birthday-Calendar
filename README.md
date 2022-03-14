@@ -9,7 +9,7 @@ Interactive calendar to see and keep track of your family and friends' birthday!
 
 ## Installation
 
-python > 3.8 necessary (see https://www.python.org/downloads/)
+python => 3.8 necessary (see https://www.python.org/downloads/)
 ```
 git clone https://github.com/Raiytak/Birthday-Calendar.git
 cd Birthday-Calendar
