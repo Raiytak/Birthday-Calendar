@@ -1,6 +1,6 @@
 # Birthday Calendar
 [![Raiytak - birthday-calendar](https://img.shields.io/static/v1?label=Raiytak&message=birthday-calendar&color=blueviolet&logo=github)](https://github.com/Raiytak/Birthday-Calendar "Go to GitHub repo")
-[![GitHub tag](https://img.shields.io/github/tag/Raiytak/birthday-calendar?include_prereleases=&sort=semver&color=brightgreen)](https://github.com/Raiytak/Birthday-Calendar/tree/v1.0)
+[![GitHub tag](https://img.shields.io/github/tag/Raiytak/birthday-calendar?include_prereleases=&sort=semver&color=blue)](https://github.com/Raiytak/Birthday-Calendar/tree/v1.0)
 [![License](https://img.shields.io/badge/License-MIT-brightgreen)](#license)
 
 Interactive calendar to see and keep track of your family and friends' birthday!
