@@ -13,8 +13,8 @@ python > 3.8 necessary (see https://www.python.org/downloads/)
 ```
 git clone https://github.com/Raiytak/Birthday-Calendar.git
 cd Birthday-Calendar
-pip3 install -r requirements.txt
-python3 -m birthday_calendar
+pip install -r requirements.txt
+python -m birthday_calendar
 ```
 
 ## Save your birthdays!
