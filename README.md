@@ -7,6 +7,15 @@ Interactive calendar to see and keep track of your family and friends' birthday!
 
 ![birthday calendar window](https://github.com/Raiytak/Birthday-Calendar/blob/master/assets/birthday_calendar.png?raw=true)
 
+## Presentation
+Using tkinter, it generates a calendar view on which you can add and delete birthdays. \
+You write the **person's information** (name, lastname, day and month) and the app adds it to the list of birthdays.
+
+The **month** can be an integer (1 - 12) or a name (february). \
+*If the month is in a language other than english, the app uses the **googletranslation** API to translate it. It will take some additional seconds to launch the first time because of that.*
+
+The app creates a cache in the user folder named '.birthday_calendar', to keep track of the translations and speed up the execution.
+
 ## Installation
 
 python => 3.8 necessary (see https://www.python.org/downloads/)
@@ -53,16 +62,7 @@ You can download the example file here:
 Then clic on the "Use File" button and select your file containing your info!
 
 ## Add / Remove a birthday
-To __add a birthday__, add the information needed on the entries on the right and clic on "Add birthday", the identifier is optional (it is only required to differenciate two people with the same name and lastname).
+To **add a birthday**, add the information needed on the entries on the right and clic on "Add birthday", the identifier is optional (it is only required to differenciate two people with the same name and lastname).
 
-To __remove a birthday__, you need to put its identifier (the name inside the parenthesis in the label of the birthday) next to the button "Remove", and then clic on it!
-
-## Information
-Using tkinter, it generates a calendar view on which you can add and delete birthdays.
-You write the person's information (name, lastname, day and month) and it adds it to the list of birthdays.
-
-The month can be an integer (1 - 12) or a name (february).
-If the month is in a different language other than the english one, the app uses the googletranslation API to translate it.
-
-A cache is created in the user folder (.birthday_calendar), to keep track of the translation and speed up the execution.
+To **remove a birthday**, put its identifier (the name inside the parenthesis in the label of the birthday) next to the button "Remove", and then clic on it!
 
