@@ -1,4 +1,4 @@
-# Birthday-Calendar
+# Birthday Calendar
 [![Raiytak - birthday-calendar](https://img.shields.io/static/v1?label=Raiytak&message=birthday-calendar&color=blueviolet&logo=github)](https://github.com/Raiytak/Birthday-Calendar "Go to GitHub repo")
 [![GitHub tag](https://img.shields.io/github/tag/Raiytak/birthday-calendar?include_prereleases=&sort=semver&color=brightgreen)](https://github.com/Raiytak/birthday-calendar/releases/)
 [![License](https://img.shields.io/badge/License-MIT-brightgreen)](#license)
