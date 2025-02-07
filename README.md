@@ -28,7 +28,7 @@ python -m birthday_calendar
 
 If you are on Linux you might need to download Tkinter through apt:
 ```bash
-
+apt install python3-tk
 ```
 
 ## Save your birthdays!
