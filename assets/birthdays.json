@@ -7,14 +7,6 @@
             "month": 12
         }
     },
-    "julie": {
-        "name": "Julie",
-        "lastname": "Poiriet",
-        "birthday": {
-            "day": 30,
-            "month": "march"
-        }
-    },
     "helloworld": {
         "name": "Hello",
         "lastname": "World",

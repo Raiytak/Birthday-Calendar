@@ -19,11 +19,16 @@ The app creates a cache in the user folder named '.birthday_calendar', to keep t
 ## Installation
 
 python => 3.8 necessary (see https://www.python.org/downloads/)
-```
+```bash
 git clone https://github.com/Raiytak/Birthday-Calendar.git
 cd Birthday-Calendar
 pip install -r requirements.txt
 python -m birthday_calendar
+```
+
+If you are on Linux you might need to download Tkinter through apt:
+```bash
+
 ```
 
 ## Save your birthdays!
@@ -36,14 +41,6 @@ To save your birthdays, you need a json file containing their info. An example i
         "birthday": {
             "day": 12,
             "month": 12
-        }
-    },
-    "julie": {
-        "name": "Julie",
-        "lastname": "Poiriet",
-        "birthday": {
-            "day": 30,
-            "month": "march"
         }
     },
     "helloworld": {
