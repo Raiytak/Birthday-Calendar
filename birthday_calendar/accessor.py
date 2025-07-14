@@ -11,7 +11,7 @@ containing the cache 'normalized.json' (translates the months in integer if nece
 
 HOME = Path.home()
 APP_FOLDER = ".birthday_calendar"
-NORMALIZED_JSON = "normalized.json"
+NORMALIZED_JSON = "birthdays.json"
 
 
 class BirthdayAccessor:

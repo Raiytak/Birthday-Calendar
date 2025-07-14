@@ -35,21 +35,13 @@ apt install python3-tk
 To save your birthdays, you need a json file containing their info. An example is given below:
 ```
 {
-    "minimum": {
-        "name": "Name",
-        "lastname": "Lastname",
-        "birthday": {
-            "day": 12,
-            "month": 12
-        }
-    },
     "helloworld": {
         "name": "Hello",
         "lastname": "World",
         "birthday": {
-            "day": 5,
-            "month": "juillet",
-            "year": 1997
+            "day": 1,
+            "month": "july",
+            "year": 1970
         }
     }
 }
@@ -57,6 +49,8 @@ To save your birthdays, you need a json file containing their info. An example i
 You can download the example file here:
 [birthdays.json](https://github.com/Raiytak/Birthday-Calendar/tree/master/assets/birthdays.json)
 Then clic on the "Use File" button and select your file containing your info!
+
+The birtdays file is stored at the path `$HOME/.birthday_calendar/birthdays.json`.
 
 ## Add / Remove a birthday
 To **add a birthday**, add the information needed on the entries on the right and clic on "Add birthday", the identifier is optional (it is only required to differenciate two people with the same name and lastname).
